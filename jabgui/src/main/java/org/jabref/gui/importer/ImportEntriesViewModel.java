@@ -303,7 +303,7 @@ public class ImportEntriesViewModel extends AbstractViewModel {
                         if (newEntries != null && !newEntries.isEmpty()) {
                             allEntries.addAll(newEntries);
                             updateTotalPages();
-                            // goToNextPage(); // <-- Add this line
+                            goToNextPage();
                         } else {
                             LOGGER.warn("No new entries fetched from {} for page {}",
                                     fetcher.get().getName(),
